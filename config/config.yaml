@@ -1,0 +1,26 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://s3.hf.co
+  bucket_path : Rakesh7n
+  data_path : ncrt/Physics_12th_Cleaned.csv
+  data_dir: artifacts/data_ingestion
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/Physics_12th_Cleaned.csv
+  tokenizer_id: Qwen/Qwen3-4B-Thinking-2507
+  
+
+model:
+  root_dir: artifacts/model
+  model_id: Qwen/Qwen3-4B-Thinking-2507
+  model_path: artifacts/model
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  base_url: https://integrate.api.nvidia.com/v1
+  llm_path: claude-haiku-5-5
+  dataset_path: Rakesh7n/ncrt_eval_outputs
+  

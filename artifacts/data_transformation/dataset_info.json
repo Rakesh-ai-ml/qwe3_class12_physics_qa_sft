@@ -1,0 +1,57 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 4988808,
+  "description": "",
+  "download_size": 4633293,
+  "features": {
+    "Explanation": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "Question": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "Answer": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "messages": {
+      "feature": {
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    },
+    "formatted_prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 9622101,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 4988808,
+      "num_examples": 5239,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
